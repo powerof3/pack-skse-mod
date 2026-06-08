@@ -282,7 +282,7 @@ jobs:
       HAS_VR: ${{ steps.variants.outputs.HAS_VR }}
       THE_HELL: ${{ steps.variants.outputs.THE_HELL }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: false
 
