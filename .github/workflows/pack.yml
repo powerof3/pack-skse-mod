@@ -275,7 +275,7 @@ on:
 
 jobs:
   prepare:
-    runs-on: windows-latest
+    runs-on: windows-2025-vs2026
     outputs:
       HAS_SE: ${{ steps.variants.outputs.HAS_SE }}
       HAS_AE: ${{ steps.variants.outputs.HAS_AE }}
