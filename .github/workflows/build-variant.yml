@@ -56,7 +56,7 @@ env:
 
 jobs:
   build:
-    runs-on: windows-2025-vs2026
+    runs-on: windows-2022
     outputs:
       ARTIFACT_NAME: ${{ steps.export.outputs.ARTIFACT_NAME }}
       BINARY_NAME: ${{ steps.export.outputs.BINARY_NAME }}

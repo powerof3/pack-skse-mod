@@ -37,7 +37,7 @@ on:
         type: string
         description: "Name of the CMakePresets.json's configuration to use to generate the project files for SE variant."
         required: false
-        default: 'vs2026-windows-vcpkg-se'
+        default: 'vs2022-windows-vcpkg-se'
       CMAKE_SE_BUILD_PRESET:
         type: string
         description: "Name of the CMakePresets.json's configuration to build the project for SE variant."
@@ -52,7 +52,7 @@ on:
         type: string
         description: "Name of the CMakePresets.json's configuration to use to generate the project files for AE variant."
         required: false
-        default: 'vs2026-windows-vcpkg-ae'
+        default: 'vs2022-windows-vcpkg-ae'
       CMAKE_AE_BUILD_PRESET:
         type: string
         description: "Name of the CMakePresets.json's configuration to build the project for AE variant."
@@ -66,7 +66,7 @@ on:
         type: string
         description: "Name of the CMakePresets.json's configuration to use to generate the project files for VR variant."
         required: false
-        default: 'vs2026-windows-vcpkg-vr'
+        default: 'vs2022-windows-vcpkg-vr'
       CMAKE_VR_BUILD_PRESET:
         type: string
         description: "Name of the CMakePresets.json's configuration to build the project for VR variant."
@@ -275,7 +275,7 @@ on:
 
 jobs:
   prepare:
-    runs-on: windows-2025-vs2026
+    runs-on: windows-2022
     outputs:
       HAS_SE: ${{ steps.variants.outputs.HAS_SE }}
       HAS_AE: ${{ steps.variants.outputs.HAS_AE }}
